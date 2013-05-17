@@ -1,0 +1,19 @@
+@charset "utf-8";
+.mapInfo {
+	position: absolute;
+	z-index: 1000;
+	max-width: 250px;
+	word-wrap: break-word;
+	text-align: left;
+	padding: 5px;
+	min-height: 1em;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font: 12px 'Microsoft YaHei', Arial, Tahoma, Sans-Serif;
+	color: #BB861C;
+	background: #fffbd6;
+	border: 1px solid #c5b270;
+	display: none;
+}

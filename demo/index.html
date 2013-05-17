@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>world map demo</title>
+	   	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"></meta>
+		
+		<script type="text/javascript" src="raphael-min.js"></script>
+		<script type="text/javascript" src="../src/js/map.js"></script>
+		<script type="text/javascript" src="../src/js/mapData.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="../src/css/map.css" />
+
+	</head>
+	<body>
+		<p><a href="http://github.com/JChord/worldMap-js" style="background: #2B993C; padding: 5px; text-decoration: none; color: #fff;">Fork me on Github &raquo;</a></p>
+
+		<div id="map"></div>
+
+		<script type="text/javascript">
+			var areaData = {
+				'world.CN':{
+					name:'China',
+					content:'blablabla..'
+				},
+				'zhejiang.hangzhou':{
+					name:'杭州市',
+					content:'blablabla..'
+				},
+				'hangzhou.hangzhou':{
+					name:'滨江区',
+					content:"I'm here!"
+				},
+				'china.zhejiang':{
+					name:'浙江省',
+					content:'blablabla..'
+				}
+			};
+
+
+			map.draw(
+				{
+					mapData : world,
+					areaData : areaData
+				},
+				{
+					owner: 'map',//绘制地图的div
+					width: 1000,//大小与矢量图形文件图形对应。
+					height: 470,
+					animation: true
+				}
+			); 
+		</script>
+	</body>
+</html>
