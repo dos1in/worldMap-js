@@ -2,7 +2,7 @@
  * World map built using Raphael.js.
  * Licensed under the MIT.
  * Copyright (c) 2013 DosLin
- * @name     timePicker
+ * @name     worldMap-js
  * @author   DosLin (http://doslin.com)
  */
 
