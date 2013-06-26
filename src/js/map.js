@@ -15,8 +15,7 @@
 			"fill": "#3FA9F5",
 			"stroke": "#ddd",
 			"stroke-width": 1,
-			"stroke-linejoin": "round",
-			'opacity':1
+			"stroke-linejoin": "round"
 		};
 
 	exports.draw = function (datas, ops) {
@@ -154,9 +153,9 @@
 
 	exports.drawAdministrativeMap = function (area) {
 		if(_this.ops.animation) {
-			var anim = Raphael.animation({transform:"s1"},1200,"elastic");
+			var anim = Raphael.animation({"opacity":1},1200,"elastic");
 			for(var mData in area){
-				area[mData].pathE = _this.paper.path(area[mData].path).attr("transform", "s0").attr(administrativeAttr).animate(anim.delay(500));
+				area[mData].pathE = _this.paper.path(area[mData].path).attr(administrativeAttr).attr("opacity", 0).animate(anim.delay(500));
 			}
 			for(var mData in area){
 				_this.setAdText(area[mData]);
